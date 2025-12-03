@@ -14,7 +14,7 @@ from pathlib import Path
 
 from uno.engine import UnoSimulation
 # Imports Bots
-from uno.bots import RandomBot, WildFirstBot, WildLastBot
+from uno.bots import RandomBot, WildFirstBot, WildLastBot, super_bot
 
 
 class UNOCLI:
@@ -194,7 +194,7 @@ def run_default_simulation() -> Dict[str, Any]:
         Dictionary containing simulation statistics
     """
     bots = [
-        RandomBot("Random1", 1),
+        super_bot("super bot", 1),
         WildFirstBot("WildFirst", 2),
     ]
     
@@ -230,4 +230,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
