@@ -105,8 +105,6 @@ Examples:
         bot_classes = {
             "RandomBot": RandomBot,
             "WildFirstBot": WildFirstBot, 
-            "WildLastBot": WildLastBot,
-            "RimkaBotSlaper": RimkaBotSlapper
         }
         
         bots = []
